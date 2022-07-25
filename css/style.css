@@ -1,0 +1,51 @@
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 13px;
+    background-color: rgba(194, 194, 194, 0.5);
+    border-radius: 4px;
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+}
+
+/* Krug za odabir */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #00D1B2;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+}
+
+.nonConnected {
+    transition: all .5s;
+}
+
+.disabled {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.btn {
+    background-color: #00D1B2;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
